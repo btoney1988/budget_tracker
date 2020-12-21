@@ -11,7 +11,7 @@ request.onsuccess = function (event) {
   event.preventdefault();
   db = event.target.result;
 
-  if (navigator.online) {
+  if (navigator.onLine) {
     checkDatabase();
   }
 };
