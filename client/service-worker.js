@@ -1,13 +1,10 @@
 // List of data to cache
 var FILES_TO_CACHE = [
-  '/',
-  '/styles.css',
-  '/index.js',
-  '/db.js',
-  '/manifest.webmanifest',
-  '/favicon.ico',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
+  "/",
+  "/index.html",
+  "/css/style.css",
+  "/dist/app.bundle.js",
+  "/dist/db.bundle.js"
 ];
 
 //Name of website files cache
