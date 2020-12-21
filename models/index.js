@@ -1,3 +1,1 @@
-module.exports = {
-  Transaction: require('./transaction')
-};
+export const Transaction = require('./transaction');
