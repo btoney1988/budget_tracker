@@ -44,4 +44,6 @@ https://secure-fjord-68385.herokuapp.com/
  -Click here to check out the deployed application:
 https://secure-fjord-68385.herokuapp.com/
 
+![image](https://user-images.githubusercontent.com/68873509/102829076-46724400-43b4-11eb-997a-cf240c5f2f61.png)
+
  https://github.com/btoney1988/budget_tracker
