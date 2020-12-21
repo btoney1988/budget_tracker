@@ -1,6 +1,5 @@
 let mongoose = require("mongoose");
 let db = require("../models");
-require('dotenv/config');
 
 const dbConfig = process.env.MONGODB_URI;
 

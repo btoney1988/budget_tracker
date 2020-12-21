@@ -1,7 +1,7 @@
-const express = require("express");
-const logger = require("morgan");
-const mongoose = require("mongoose");
-const compression = require("compression");
+import express, { urlencoded, json, static } from "express";
+import logger from "morgan";
+import { connect } from "mongoose";
+import compression from "compression";
 
 const PORT = process.env.PORT || 3000;
 
@@ -10,12 +10,12 @@ const app = express();
 app.use(logger("dev"));
 
 app.use(compression());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(urlencoded({ extended: true }));
+app.use(json());
 
-app.use(express.static("public"));
+app.use(static("client"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
