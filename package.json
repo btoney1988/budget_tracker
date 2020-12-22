@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "if-env MONGODB_URI= mongodb+srv://user:Password20@cluster0.ejr4c.mongodb.net/budget?retryWrites=true&w=majority&& npm run start:prod || npm run start:dev",
+    "start": "if-env MONGODB_URI=mongodb+srv://user:Password20@cluster0.ejr4c.mongodb.net/budget?retryWrites=true&w=majority && npm run start:prod || npm run start:dev",
     "start:prod": "npm run build && node server.js",
     "start:dev": "concurrently \"npm run server\" \"cd client && npm run build\"",
     "build": "cd client && npm run build",
