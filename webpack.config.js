@@ -4,11 +4,11 @@ const path = require("path");
 
 const config = {
   entry: {
-    app: "./js/index.js",
-    db: "./js/db.js"
+    app: "./client/js/index.js",
+    db: "./client/js/db.js"
   },
   output: {
-    path: __dirname + "/dist",
+    path: __dirname + "/client/dist",
     filename: "[name].bundle.js"
   },
   mode: "development",
@@ -43,7 +43,7 @@ const config = {
       "theme-color": "#ffffff",
       start_url: "/",
       icons: [{
-        src: path.resolve("icons/icon-192x192.png"),
+        src: path.resolve("./client/icons/icon-192x192.png"),
         sizes: [96, 128, 192, 256, 384, 512],
         destination: path.join("assets", "icons")
       }]
